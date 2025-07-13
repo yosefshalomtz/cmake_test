@@ -8,12 +8,14 @@ requirements:
 - Git installed
 
 type the following commands in the terminal:
-> git clone https://github.com/yosefshalomtz/cmake_test
-> cd cmake_test
-> mkdir build
-> cd build
-> cmake -G "MinGW Makefiles" ..
-> mingw32-make
+```bash
+git clone https://github.com/yosefshalomtz/cmake_test
+cd cmake_test
+mkdir build
+cd build
+cmake -G "MinGW Makefiles" ..
+mingw32-make
+```
 
 ### build on linux:
 requirements:
@@ -22,11 +24,13 @@ requirements:
 - Git installed
 
 type the following commands in the terminal:
-> git clone https://github.com/yosefshalomtz/cmake_test
-> cd cmake_test
-> mkdir build && cd build
-> cmake -G "Unix Makefiles" ..
-> make
+```bash
+git clone https://github.com/yosefshalomtz/cmake_test
+cd cmake_test
+mkdir build && cd build
+cmake -G "Unix Makefiles" ..
+make
+```
 
 ### issues:
 If you encounter any issues, please open an issue on the GitHub repository.
