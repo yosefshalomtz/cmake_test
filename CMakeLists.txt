@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
 project(cmake_test)
 
-# נשתמש ב־C++17
+# Use C++17 standard
 set(CMAKE_CXX_STANDARD 17)
 
-# נוסיף את תיקיית include לקומפיילר
+# Add the include directory to the compiler
 include_directories(include)
 
-# נמצא את כל קבצי המקור
+# Find all source files in the src directory
 file(GLOB SOURCES "src/*.cpp")
 
-# נבנה את האובייקט
+# Create the executable from the source files
 add_executable(MyProject ${SOURCES})
